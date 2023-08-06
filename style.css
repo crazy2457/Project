@@ -1,0 +1,970 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    position: fixed;
+    height: 10vh;
+    width: 80vh;
+    
+    z-index: 99;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    top: 3%;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff54;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0pc 5px;
+
+}
+#nav img{
+    height: 50px;
+    width: 50px;
+}
+#nav button{
+    padding: 15px 10px;
+    background-color: #FFD687;
+    border-radius: 10px;
+    border: none;
+font-weight: 600;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-family: gilroy;
+    font-size: 15px;
+    
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    /* background-color: black; */
+}
+#page h1{
+    font-size: 80px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    line-height: 80px;
+    z-index: 999;
+    webkit-font-smoothing:antialised;
+
+
+}
+#page p{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    font-size: 30px;color: #554e4e;
+    z-index: 999;
+ 
+}
+
+canvas{
+    height: 100vh;
+    width: 100vw;
+    
+    z-index: 9;
+    
+}
+#page1t{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent; 
+    z-index: 99;
+} 
+#page1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #E4E0DD;
+    /* z-index: 99; */
+
+}
+#page1 h1{
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 600;
+    line-height: 80px;
+    z-index: 99;
+
+}
+#page1 p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    font-size: 30px;color: #554e4e;
+    z-index: 99;
+}
+#page2t{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; 
+    z-index: 99;
+
+}
+  #page2{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: #E4E0DD;
+    z-index: 99;
+} 
+#page2 h1{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    line-height: 50px;
+
+}
+#page2 p{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    font-size: 30px;color: #554e4e;
+    z-index: 99;
+}    
+
+ #page3{
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    background-color: #FFFFFF;
+    z-index: 99;
+    /* overflow: hidden; */
+ }
+ #page3 h1{
+    font-size: 30px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    color: #423e3e;
+ }
+ #round {
+  
+ }
+ #round #imgdiv{
+   
+   white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+    
+ }
+ 
+    
+ 
+ #imgdiv img{
+    height: 100%;
+    width: 100px;
+    /* background-color: black; */
+    object-fit: cover;
+    padding: 30px 10px;
+   
+   
+    display: inline-block;
+    margin-right: 20px;
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes scroll{
+    0%{
+        transform: translateX( 0%);
+    }
+    100%{
+        transform: translateX(calc(-100%  - 24px));
+    }
+}
+/* #page3 :hover h1{
+    animation-play-state: paused;
+} */
+::-webkit-scrollbar{
+    display: none;
+}
+#page3 #center{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* background-color: rgb(219, 177, 177); */
+}
+#center h1{
+    font-size: 100px;
+    font-weight: 100;
+    position: absolute;
+    left: 10%;
+   
+}
+#centerpage5{
+    height: 50%;
+    width: 70%;
+    background-color:#F6F3EF;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+    
+}
+#centerpage5 #left{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#left >svg{
+    scale: 0.9;
+    padding-left: 70px ;
+}
+
+#centerpage5 #right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 251, 0); */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30PX;
+    padding: 30PX;
+}
+#right h1{
+    font-size: 50px;
+    padding-top: -20px;
+    
+    
+    
+}
+#right p{
+   
+    font-size: 20PX;
+    width: 75%;
+    font-weight: 600;
+    color: #3b3838;
+    padding-top: -70px;
+
+}
+#right button{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222;
+    color: #FFFFFF;
+}
+#page4{
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    background-color: #FFFFFF;
+    z-index: 99;
+    
+}
+#page4 h1{
+    font-size: 80px;
+    font-family: Noi Grotesk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+
+}
+#page5{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: #FFFFFF;
+    z-index: 99;
+    
+}
+
+#page5text{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    /* background-color: red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+    
+}
+#page5left{
+    width: 60%;
+    height: 100%;
+    /* background-color: #222; */
+}
+#page5left h2{
+    font-size: 50px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+
+}
+#page5left p{
+    font-size: 20px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    padding: 20px 0px;
+    width: 80%;
+    color: #7a7777;
+
+}
+#page5right{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: #ca4343; */
+}
+#page5right video{
+    height: 150%;
+    width: 150%;
+    
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page6{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: 99;
+    
+}
+
+#page6text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+    
+}
+#page6right{
+    width: 50%;
+    height: 100%;
+    /* background-color: #222; */
+}
+#page6right h2{
+    font-size: 50px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    padding-top: 200px;
+    padding-left: 50px;
+
+}
+#page6right p{
+    font-size: 20px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    padding: 20px 50px;
+    width: 63%;
+    color: #7a7777;
+
+}
+#page6left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: #ca4343; */
+}
+#page6left video{
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: none;
+}
+
+#page7{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: #FFFFFF;
+    z-index: 99;
+    
+}
+
+#page7text{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    /* background-color: red; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+    
+}
+#page7left{
+    width: 60%;
+    height: 100%;
+    /* background-color: #222; */
+}
+#page7left h2{
+    font-size: 50px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+
+}
+#page7left p{
+    font-size: 20px;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+    padding: 20px 0px;
+    width: 80%;
+    color: #7a7777;
+
+}
+#page7right{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: #ca4343; */
+}
+#page7right video{
+    height: 150%;
+    width: 150%;
+    
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page8{
+    position: relative;
+    width: 100vw;
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* background-color:red; */
+  
+}
+#page8 #data{
+    position: relative;
+    position: absolute;
+    width: 70vw;
+    height: 60vh;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#data h1{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    font-size: 50px;
+    color: #fff;
+    font-family: Noi Grotesk;
+    font-weight: 100;
+}
+#data p{
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 60%;
+    width: 35%;
+    color:#F6F3EF;
+}
+#data1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}
+#data img{
+    position: absolute;
+   /* padding: 10px 50px; */
+   left: 8%;
+   top: 30%;
+    height: 50px;
+    width: 50px;
+}
+
+#data2 {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}
+
+
+
+ #data3 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}#data4 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}
+
+
+#data5 {
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}#data6 {
+    position: absolute;
+    top: 135%;
+    left: 5%;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: #fff;
+   
+}
+#data h5{
+    position: absolute;
+    font-size: 15px;
+    width: 50%;
+    color: #222;
+    font-weight: 100;
+    left: 30%;
+    top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page9{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+}
+
+#page9 h1{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 50px;
+    font-family: Noi Grotesk;
+    
+}
+#page9 p{
+    position: absolute;
+    font-size: 20px;
+    width: 25%;
+    top: 40%;
+    left: 20%;
+}
+#page9 img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height:70%;
+    width: 40%;
+    object-fit: cover;
+}
+#zelt{
+    display: none;
+}
+#page5 h1{
+    display: none;
+}
+
+@media(max-width:500px){
+    #nav{
+      display: none;
+
+    }
+    #zelt{
+        position: absolute;
+        display: initial;
+        width: 100%;
+        height: 10%;
+        
+        z-index: 999;
+    }
+    #zelt img{
+        padding: 10px 10px;
+        height: 80px;
+        width: 80px;
+    }
+    #zelt i{
+        position: absolute;
+        padding-top: 40px;
+        padding-left: 300px;
+    }
+    #nav a{
+        
+        display:none;
+        width: 100%;
+        height: 20%;
+        background-color: red;
+
+    }
+    #nav button{
+        display: none;
+        position: absolute;
+       
+    }
+    #page h1{
+        position: absolute;
+        
+        font-size: 70px;
+        line-height: 65px;
+        top: 3.4%;
+        width: 100%;
+        
+        
+    }
+
+    #page p{
+        position: absolute;
+        
+        font-size: 20px;
+        line-height: 30px;
+        top: 5%;
+        width: 65%;
+        
+        
+    }
+
+    #page1 h1{
+        position: absolute;
+        font-weight: 100;
+        font-size: 70px;
+        width: 130%;
+        line-height: 60px;
+    }
+    #page1 p{
+        position: absolute;
+        font-size: 25px;
+        width: 68%;
+    }
+
+
+    #page2 h1{
+        position: absolute;
+        font-size: 40px;
+        width: 80%;
+        line-height: 40px;
+    }
+    #page2 p{
+        position: absolute;
+        font-size: 20px;
+        width: 65%;
+        top: 50%;
+    }
+    #page3>h1{
+        position: absolute;
+        font-size: 20px;
+        font-family: Noi Grotesk;
+        width: 90%;
+        text-align: center;
+
+    }
+    #round{
+        position: absolute;
+        top: 10%;
+    }
+    #center>h1{
+        position: absolute;
+        top: 30%;
+        font-size: 60px;
+        font-family: Noi Grotesk;
+        color: #222;
+    }
+    #centerpage5{
+        position: absolute;
+        flex-direction: column;
+        /* background-color: red;  */
+        top: 65%;
+        width: 90%;
+        border-radius: 10px;
+    }
+    #right h1{
+        position: absolute;
+    }
+    #right p{
+        position: absolute;
+    }
+    #left{
+        position: absolute;
+        top: -25%;
+    /* height: 100%;
+    width: 100%; */
+    }
+
+    #left >svg{
+        scale: 2.5;
+        padding-left: 70px ;
+    }
+    #right h1{
+        position: absolute;
+        font-size: 50px;
+        font-family: Noi Grotesk;
+    }
+    #right p{
+        top: 58%;
+        position: absolute;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    #right button{
+        position: absolute;
+        top: 90%;
+        font-size: 10px;
+    }
+    #page4{
+        display: none;
+    }
+    #page5>h1{
+        position: absolute;
+        left: 20%;
+        display: initial;
+        font-size: 50px;
+        font-weight: 200;
+        font-family: Noi Grotesk;
+        flex-direction: column;
+    }
+    #page5left h2{
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        font-family: Noi Grotesk;
+        font-size: 35px;
+        
+    }
+    #page5left p{
+        position: absolute;
+        font-size: 20px;
+        top: 60%;
+        left: -10%;
+        width: 120%;
+    }
+    #page5right{
+        position: absolute;
+        scale: 2;
+        top: -40%;
+    }
+    #page6{
+        /* background-color: blue; */
+        height: 80vh;
+    }
+    #page6left{
+        position: absolute;
+        top: -40%;
+        scale: 2.5;
+        left: 15%;
+    }
+    #page6right h2{
+        position: absolute;
+        top: 10%;
+    }
+    #page6right p{
+        position: absolute;
+        font-size: 20px;
+        width: 90%;
+        top: 50%;
+    }
+    #page7{
+        /* top: 50%; */
+        /* background-color: red; */
+    }
+
+    #page7right{
+        position: absolute;
+        top: -60%;
+        left: -15%;
+        scale: 3;
+    }
+    #page7left h2{
+        position: absolute;
+        top: 40%;
+        left: -10%;
+    }
+    #page7left p{
+        position: absolute;
+        font-size: 20px;
+        top: 60%;
+        width: 120%;
+        left: -9%;
+    }
+    #page8{
+        position: relative;
+        /* background-color: red; */
+        flex-direction: column;
+        width: 100%;
+        height: 120vh;
+    }
+    #page8 #data{
+        overflow: none;
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        background-color: black;
+    }
+    #data1{
+        position: absolute;
+        width: 90%;
+        top: 3%;
+    }
+
+
+    #data2{
+        width: 90%;
+        top: 12%;
+    }
+    #data3{
+        width: 90%;
+        top: 22%;
+    }
+    #data4{
+        width: 90%;
+        top: 32%;
+    }
+    #data5{
+        width: 90%;
+        top: 42%;
+    }
+    #data6{
+        width: 90%;
+        top: 52%;
+    }
+    #data>h1{
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        font-size: 35px;
+    }
+
+    #data>p{
+        position: absolute;
+        top: 73%;
+        left: 10%;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    #page9{
+        /* flex-direction: column; */
+        /* background-color: red; */
+    }
+    #page9 img{
+        position: absolute;
+        height:30%;
+        width: 80%;
+        left: 8%;
+        top: 5%;
+        scale: 1;
+        object-fit: cover;
+    }
+    #page9 h1{
+        position: absolute;
+        top: 40%;
+        left: 8%;
+        font-weight: 100;
+    }
+    #page9 p{
+        position: absolute;
+        top: 49%;
+        left: 8%;
+        font-weight: 100;
+        width: 80%;
+
+    }
+}
